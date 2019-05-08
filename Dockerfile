@@ -2,7 +2,7 @@ FROM ros:kinetic-perception
 
 WORKDIR /workspace
 
-RUN git clone -b aido1_lf1_r3-v3 https://github.com/duckietown/gym-duckietown src/gym-duckietown
+RUN git clone -b aido2 https://github.com/duckietown/gym-duckietown src/gym-duckietown
 RUN apt-get update
 RUN easy_install pip 
 RUN pip install --user -e src/gym-duckietown/
